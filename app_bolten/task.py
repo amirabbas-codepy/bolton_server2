@@ -12,7 +12,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project_name.settings')
 django.setup()
 
 from django.core.mail import EmailMultiAlternatives
-from app_bolten.models import NewsItem
+from .models import NewsItem
 
 # حالا کد ارسال ایمیل رو مستقیم بنویس
 
