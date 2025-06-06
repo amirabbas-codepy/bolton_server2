@@ -233,3 +233,26 @@ def send_news_with_emails(request):
     else:
         return HttpResponse("Task is already scheduled.")
 
+def serch_news(request):
+    email = request.COOKIES.get('subscriber_email')
+    if not email:
+        return redirect(easy_login)
+
+    subscriber = Subscriber.objects.filter(email=email).first()
+    if not subscriber:
+        return redirect(easy_login)
+
+    if request.method == 'POST':
+        form_data = SearchForm(request.POST)
+        if form_data.is_valid():
+            data = form_data.cleaned_data
+            keyword = data.get('value')
+            newslist = NewsItem.objects.filter(user=subscriber, keyword=keyword)
+            return render(request=request, template_name='serch.html', context={'newslist':newslist})
+
+        else:
+            return redirect(home_view)
+    
+    
+    form = SearchForm()
+    return render(request=request, template_name='serch.html', context={'form':form})

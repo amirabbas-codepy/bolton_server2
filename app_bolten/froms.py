@@ -11,3 +11,6 @@ class TraketForm(forms.Form):
 
 class DeletedForm(forms.Form):
     news_id = forms.IntegerField(required=True)
+
+class SearchForm(forms.Form):
+    value = forms.CharField(max_length=300, label='keyword')

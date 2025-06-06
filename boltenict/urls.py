@@ -27,4 +27,5 @@ urlpatterns = [
     path('deltr/', delete_news_item, name='del'),
     path('seema/', send_all_emails, name='0000'),
     path('taskemails/', send_news_with_emails, name='task_view'),
+    path('serch/', serch_news, name='ser'),
 ]
