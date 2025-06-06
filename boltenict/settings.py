@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-skei8d^)6xb=m%gt+!$d*iz^at=ny3abn=03m+nd-i@ci9%s2-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ghafarcode.pythonanywhere.com']
 
 
 # Application definition
@@ -135,5 +135,3 @@ EMAIL_HOST_USER = 'ghafarsoft@gmail.com'
 EMAIL_HOST_PASSWORD = 'sctuzvtrbphtcoyc'
 
 AUTH_USER_MODEL = 'app_bolten.Subscriber'
-
-HTTP_HOST = ['ghafarcode.pythonanywhere.com']
