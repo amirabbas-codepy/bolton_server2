@@ -241,7 +241,6 @@ def serch_news(request):
     subscriber = Subscriber.objects.filter(email=email).first()
     if not subscriber:
         return redirect(easy_login)
-
     if request.method == 'POST':
         form_data = SearchForm(request.POST)
         if form_data.is_valid():
