@@ -8,6 +8,7 @@ from django.core.mail import EmailMultiAlternatives
 
 
 # تنظیمات جنگو رو لود کن
+print("DJANGO_SETTINGS_MODULE:", os.environ.get('DJANGO_SETTINGS_MODULE'))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boltenict.settings')
 django.setup()
 
