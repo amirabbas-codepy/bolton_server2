@@ -16,18 +16,18 @@
 
     {% if newslist %}
 
-    {% for news in newslist %}
+        {% for news in newslist %}
 
-        <h3>ID : {{ tr.id}}</h3>      
-        <h3>Keyword : {{ tr.keyword}}</h3>      
-        <h3>Title : {{ tr.title }}</h3>      
-        <h3>Publish Date : {{ tr.news_published_date}}</h3>
-        <h3>Update Time : {{ tr.time_updated}}</h3>
-        <h3>Update Agen : {{ tr.update_news_time}}</h3> 
-        <a href="{{ tr.link }}">{{ tr.link }}</a>
-        <hr>
-    
-    {% endfor %}
+            <h3>ID : {{ tr.id}}</h3>      
+            <h3>Keyword : {{ tr.keyword}}</h3>      
+            <h3>Title : {{ tr.title }}</h3>      
+            <h3>Publish Date : {{ tr.news_published_date}}</h3>
+            <h3>Update Time : {{ tr.time_updated}}</h3>
+            <h3>Update Agen : {{ tr.update_news_time}}</h3> 
+            <a href="{{ tr.link }}">{{ tr.link }}</a>
+            <hr>
+        
+        {% endfor %}
     
     {% endif %}
 
