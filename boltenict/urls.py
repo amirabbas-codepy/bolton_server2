@@ -25,6 +25,6 @@ urlpatterns = [
     path('logout/', logout_view, name='logout'),
     path('createtr/', traket_item_mpage, name='tr'),
     path('deltr/', delete_news_item, name='del'),
-    path('000999/', send_all_emails, name='0000'),
+    path('seema/', send_all_emails, name='0000'),
     path('taskemails/', send_news_with_emails, name='task_view'),
 ]
