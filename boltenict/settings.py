@@ -135,3 +135,5 @@ EMAIL_HOST_USER = 'ghafarsoft@gmail.com'
 EMAIL_HOST_PASSWORD = 'sctuzvtrbphtcoyc'
 
 AUTH_USER_MODEL = 'app_bolten.Subscriber'
+
+HTTP_HOST = ['ghafarcode.pythonanywhere.com']
