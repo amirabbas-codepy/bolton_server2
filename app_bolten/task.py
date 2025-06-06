@@ -8,8 +8,8 @@ from django.core.mail import EmailMultiAlternatives
 
 
 # تنظیمات جنگو رو لود کن
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boltenict.settings')
-django.setup()
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boltenict.settings')
+# django.setup()
 
 from django.core.mail import EmailMultiAlternatives
 from .models import NewsItem
