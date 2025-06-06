@@ -5,7 +5,7 @@ import requests
 import feedparser
 from datetime import date, timedelta
 from django.core.mail import EmailMultiAlternatives
-from .models import NewsItem
+from app_bolten.models import NewsItem
 
 # تنظیمات جنگو رو لود کن
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project_name.settings')
