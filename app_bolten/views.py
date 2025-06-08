@@ -247,7 +247,7 @@ def serch_news(request):
         if form_data.is_valid():
             data = form_data.cleaned_data
             keyword = data.get('value')
-            newslist = NewsItem.objects.filter(user=subscriber, keyword=keyword)
+            newslist = NewsItem.objects.filter(user=subscriber, keyword__icontains=keyword)
             return render(request=request, template_name='serch.html', context={'newslist':newslist})
 
         else:
